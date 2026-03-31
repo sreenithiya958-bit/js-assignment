@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: purple;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 150px;
+        }
+        #BOX{
+            background-color: yellow;
+            border: 3px solid white;
+            height: 300px;
+            width: 250px;
+            margin: 50px; 
+            font-size: x-large;
+            font-weight: bolder;
+            font-family: 'Times New Roman';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="BOX">
+        <p> CSK </p>
+        <p> Dhoni </p>
+        <p> 7 </p>
+    </div>
+    <script>
+        document.getElementById(BOX).innerHTML= "CSK TEAM";
+    </script>
+</body>
+</html>
