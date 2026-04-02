@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aquamarine;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="treasure">
+        <ul id="crew">
+            <li> jack </li>
+            <li> alice </li>
+            <li> john </li>
+            <li> richard </li>
+        </ul>
+    </div>
+    <button onclick="direction()"> ask jack </button>
+    <button onclick="direction()"> ask alice </button>
+    <script>
+        function direction (name) {
+          if(name === "jack"){
+            alert("diect toward north") 
+          }
+          else{
+            alert("direct toward south")
+          }    
+        }
+    </script>
+</body>
+</html>
