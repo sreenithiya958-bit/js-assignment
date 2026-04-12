@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <p> Box </p>
+    </div>
+    <p id="p1"> old text </p>
+    <p id="p2"> hello all!, welcome to my page </p>
+    <p id="p3"> javascript is programming language </p>
+    <script>
+        let element = document.getElementById("box");
+        element.style.background = "pink";
+        element.style.padding = "10px";
+        element.style.textAlign = "center"
+        element.style.alignContent ="center"
+        element.style.width ="300px"
+        element.style.height ="200px"
+
+        let text = document.getElementById("p3");
+        text.style.fontFamily = "times new roman";
+        text.style.color = "darkblue";
+        text.style.fontWeight = "bold"
+        text.style.fontSize = "20px"
+
+        document.getElementById("p1").innerHTML ="<b>New text</b>";
+
+        document.getElementById("p2").textContent = "welcome to javascript";
+    </script>
+</body>
+</html>
