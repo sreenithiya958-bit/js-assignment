@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function handleSessionStorage() {
+  try {
+    // Save value
+    sessionStorage.setItem("user", "Jane");
+    console.log("Saved in sessionStorage");
+
+    // Remove value
+    sessionStorage.removeItem("user");
+    console.log("Removed from sessionStorage");
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+handleSessionStorage();
+
+//3rd
+async function handleLocalStorage() {
+  try {
+    // Save value
+    localStorage.setItem("name", "John");
+    console.log("Saved in localStorage");
+
+    // Remove value
+    localStorage.removeItem("name");
+    console.log("Removed from localStorage");
+  } catch (error) {
+    console.log("Error:", error);
+  }
+}
+
+handleLocalStorage();
+    </script>
+</body>
+</html>
